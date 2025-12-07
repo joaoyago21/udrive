@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Veículos - Udrive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 style="color: var(--laranja);">Meus Veículos</h2>
+
+<div id="meusCarros"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Usuário - Udrive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 style="color: var(--laranja); text-align:center;">Painel do Usuário</h2>
+
+<div style="text-align:center; margin-bottom:20px;">
+    <img id="fotoPainel" src="img/user-default.png" 
+         style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:2px solid var(--laranja);">
+
+    <br><br>
+    <input type="file" id="uploadFotoPainel" accept="image/*">
+    <button onclick="salvarFotoPainel()">Salvar Foto</button>
+
+    <h3 id="nomePainel"></h3>
+</div>
+
+
+<!-- MENU DE ABAS -->
+<div class="tabs">
+    <button class="tabBtn" onclick="abrirAba('meusVeiculos')">🚗 Meus Veículos</button>
+    <button class="tabBtn" onclick="abrirAba('cadastrar')">➕ Cadastrar Veículo</button>
+    <button class="tabBtn" onclick="abrirAba('reservas')">📅 Reservas</button>
+    <button class="tabBtn" onclick="abrirAba('historico')">📜 Reservas Antigas</button>
+    <button class="tabBtn" onclick="contatoUdrive()">📞 Falar com Udrive</button>
+</div>
+
+<!-- CONTEÚDOS DAS ABAS -->
+<div id="meusVeiculos" class="tabContent">
+    <h3>Seus Veículos</h3>
+    <div id="listaMeusCarros"></div>
+</div>
+
+<div id="cadastrar" class="tabContent" style="display:none;">
+    <h3>Cadastrar Novo Veículo</h3>
+    <div id="formCadastro"></div>
+</div>
+
+<div id="reservas" class="tabContent" style="display:none;">
+    <h3>Reservas Atuais</h3>
+    <div id="listaReservas"></div>
+</div>
+
+<div id="historico" class="tabContent" style="display:none;">
+    <h3>Reservas Antigas</h3>
+    <div id="listaHistorico"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<div id="meusVeiculos" class="tabContent">
+    <div id="listaMeusCarros"></div>
+</div>
+
+<div id="cadastrar" class="tabContent" style="display:none;">
+    <div id="formCadastro"></div>
+</div>
+
+<div id="reservas" class="tabContent" style="display:none;">
+    <div id="listaReservas"></div>
+</div>
+
+<div id="historico" class="tabContent" style="display:none;">
+    <div id="listaHistorico"></div>
+</div>
+
+<div id="alugar" class="tabContent" style="display:none;">
+    <h3>Carros disponíveis para alugar</h3>
+    <div id="carrosDisponiveisPainel"></div>
+</div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udrive - Locadora de veículos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOGO -->
+    <img src="img/logo.png" alt="Logo Udrive" class="logo">
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>UDRIVE</h1>
+        <p>Locadora de veículos</p>
+    </header>
+
+    <!-- LOGIN E CADASTRO -->
+    <div class="card" style="max-width: 400px; margin: 20px auto;">
+
+        <h2 style="color: var(--laranja); margin-bottom: 15px;">Acesse sua Conta</h2>
+
+        <input type="email" id="emailLogin" placeholder="Seu email">
+        <input type="password" id="senhaLogin" placeholder="Sua senha">
+        <button onclick="entrar()">Entrar</button>
+
+        <hr style="margin: 20px 0;">
+
+        <h3 style="color: var(--laranja-claro);">Criar Conta</h3>
+
+        <input type="text" id="nomeCadastro" placeholder="Nome completo">
+        <input type="email" id="emailCadastro" placeholder="Email">
+        <input type="password" id="senhaCadastro" placeholder="Senha">
+        <button onclick="criarConta()">Cadastrar</button>
+
+    </div>
+
+    <!-- NAVEGAÇÃO PRINCIPAL -->
+    <nav>
+        <a href="listar.html">Ver carros disponíveis</a>
+        <a href="painel.html">Painel do usuário</a>
+    </nav>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>© 2025 — Udrive</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

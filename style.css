@@ -1,0 +1,143 @@
+/* Paleta UDRIVE */
+:root {
+    --preto: #000000;
+    --cinza: #1A1A1A;
+    --laranja: #FF8C00;
+    --laranja-claro: #FFA733;
+    --branco: #FFFFFF;
+}
+
+/* BASE */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--preto);
+    color: var(--branco);
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 180px;
+    margin-top: 20px;
+}
+
+/* HEADER */
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--laranja);
+}
+
+header p {
+    color: var(--laranja-claro);
+    font-size: 20px;
+}
+
+/* NAV BAR */
+nav {
+    margin: 30px 0;
+}
+
+nav a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    background: var(--laranja);
+    color: var(--preto);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: var(--laranja-claro);
+}
+
+/* INPUTS (funcionando em todas páginas) */
+input {
+    padding: 12px;
+    margin: 10px;
+    width: 85%;
+    border-radius: 8px;
+    background: var(--cinza);
+    color: var(--branco);
+    border: 1px solid var(--laranja);
+}
+
+/* BOTÕES */
+button {
+    padding: 12px 25px;
+    background: var(--laranja);
+    color: var(--preto);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--laranja-claro);
+}
+
+/* CARDS */
+.card {
+    background: var(--cinza);
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* PAINEL - TABS */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tabBtn {
+    padding: 12px 20px !important; /* força estilo acima do button global */
+    background: var(--laranja);
+    border: none;
+    color: #000;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tabBtn:hover {
+    background: var(--laranja-claro);
+}
+
+/* CONTEÚDO DAS ABAS */
+.tabContent {
+    background: var(--cinza);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* FOTO DE PERFIL */
+.fotoPerfil {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid var(--laranja);
+    object-fit: cover;
+}

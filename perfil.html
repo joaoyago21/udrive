@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Udrive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 style="color: var(--laranja);">Meu Perfil</h2>
+
+<div class="card" style="max-width: 450px;margin:auto;">
+
+    <img id="fotoPerfil" src="img/user-default.png" style="width:120px; border-radius:50%; margin-bottom:10px;">
+
+    <br>
+    <input type="file" id="uploadFoto" accept="image/*">
+    <button onclick="salvarFoto()">Salvar Foto</button>
+
+    <h3 id="nomePerfil"></h3>
+    <p id="emailPerfil"></p>
+
+    <hr>
+
+    <button onclick="window.location.href='cadastrar.html'">Adicionar Veículo</button>
+
+    <button onclick="window.location.href='painel.html'" style="background: var(--laranja-claro);">
+        Ver meus veículos
+    </button>
+
+    <button onclick="window.location.href='listar.html'" style="margin-top: 10px;">
+        Alugar carros
+    </button>
+
+    <hr>
+
+    <button onclick="logout()" style="background:red;color:white;">Sair da Conta</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
